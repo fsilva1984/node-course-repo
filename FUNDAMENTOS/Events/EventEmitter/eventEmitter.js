@@ -10,19 +10,28 @@ eventEmitter.on('start', () => {
 
   let count=0;
   const time = setInterval(()=>{
-   console.log(`iniciando em: ${seg ++}`)
+   console.log(`iniciando em: ${(seg ++)+1}`)
 
-    if(count == 6){
+    if(count == 4){
      clearInterval(time)
+     console.log(' ')
+
+      setTimeout(()=>{
+       console.log("System Online")
+    
+      }, 1000)
     }
 
     count ++
-  }, 2000);
+  }, 900);
 
+  
+  
 });
 
 
 eventEmitter.emit('start')
+
 
 
 
