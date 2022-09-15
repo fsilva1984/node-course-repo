@@ -33,7 +33,11 @@ function operation() {
   }])//o then pega a resposta vinda do input
   .then(( answer ) => {
     
+    /*
+    a escolha do usuario sera armazenada em answer,
+    
 
+    */
     const action = answer[ 'action' ]
    
     switch ( action ) {
@@ -65,4 +69,21 @@ function createAcconunt() {
   
   console.log(chalk.green(' Defina as opcoes da sua conta a seguir '))
 
+}
+
+
+
+function buildAccount(){
+
+  inquirer.prompt([{
+  
+    name : "accountName",
+    message : " Digite um Nome para a sua conta "
+  
+  }])
+  .then(( answer ) => {
+    
+    console.log( answer )
+
+  }).catch(( err ) => console.log( err ))
 }
