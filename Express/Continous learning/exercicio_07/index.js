@@ -17,7 +17,7 @@ const app = express()
 const port = 3000
 const log = console.log;
 const directToPath = path.join(__dirname, "Files")
-const users = require("./Users/index")
+const users = require("./users/index")
 
 
 // Middleware para pegar td que estiver no body 

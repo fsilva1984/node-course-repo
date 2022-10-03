@@ -16,7 +16,7 @@ http.createServer((req, res) => {
   const name = urlInfo.query.name
 
   /*name carrega o valor do input a qual 
-  a url mostra o caminho*/
+  a url esta apontando*/
   if(!name){
     /*Aqui leremos o arquivo index.html*/
     fs.readFile('index.html', (err, data) => {
