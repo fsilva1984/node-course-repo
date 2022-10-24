@@ -1,0 +1,40 @@
+
+<h3 style="padding:6px;"><a href="/">{{ word }}</a></h3>
+
+<h1 style="font-size: 4em; text-align: center;">
+  Welcome handlebars
+</h1>
+
+<h3 style="padding: 6; text-align: center;">
+  Welcome Programmer
+</h3>
+
+
+<section style="display: flex; justify-content:space-around;">
+
+
+
+<ul>
+  <li style="font-size: 18px;">Name</li>
+  <li style="font-size: 18px;">Surname</li>
+  <li style="font-size: 18px;">Age</li>
+  <li style="font-size: 18px;">Profession</li>
+  
+</ul>
+
+<ul>
+  <li>{{userData.name}}</li>
+  <li>{{userData.surname}}</li>
+  <li>{{userData.age}}</li>
+  <li>{{userData.profession}}</li>
+</ul>
+
+</section>
+
+{{#if auth}}
+
+<p style="text-align: center;margin-top:20px;">
+  Area <a href="/dashboard">dashboard</a>
+</p>
+
+{{/if}}

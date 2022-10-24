@@ -1,0 +1,25 @@
+
+<h3 style="padding:6px;"><a href="/">{{ word }}</a></h3>
+
+<h1 style="font-size: 4em; text-align: center;">
+  Welcome handlebars
+</h1>
+
+<h3 style="padding: 6; text-align: center;">
+  Welcome Programmer
+</h3>
+
+
+
+{{#if auth}}
+
+<p style="text-align: center;margin-top:20px;">
+  Area <a href="/dashboard">dashboard</a>
+</p>
+{{else}}
+
+<p style="text-align: center;margin-top:20px;">
+  <a href="/noAuth">Cadastre-se</a>
+</p>
+
+{{/if}}

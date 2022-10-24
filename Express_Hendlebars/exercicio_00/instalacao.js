@@ -1,5 +1,15 @@
+
+
+/*
+Objetivo da aula : montar o setup inicial 
+para o funcionamento correto do handlebars.
+
+*/
+
+
 const express = require("express")
 const exphbs = require("express-handlebars")
+
 
 const app = express()
 const { engine } = exphbs
